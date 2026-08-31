@@ -7,6 +7,8 @@ else
         require('plugins.telescope')
 end
 
+require('plugins.fugitive')
+
 if vim.fn.has("win32") == 1 then
     require("powershell")
 end
