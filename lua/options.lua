@@ -18,6 +18,7 @@ vim.o.splitright = true
 -- UI
 vim.o.scrolloff = 8
 vim.o.signcolumn = "yes"
+vim.o.cmdheight = 0
 
 -- backup
 vim.o.swapfile = false

@@ -7,6 +7,12 @@ require('telescope').setup({
         defaults = {
                 -- custom options go here
         },
+        pickers = {
+            colorscheme = {
+                enable_preview = true,
+                ignore_builtins = true,
+            },
+        },
 })
 
 local builtin = require('telescope.builtin')
