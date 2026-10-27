@@ -7,7 +7,8 @@ return {
                     "bazel-*",
                     "**/node_modules",
                     "**/__pycache__",
-                    "**/.*" },
+                    "**/.*"
+                },
             }
         }
     },

@@ -18,13 +18,13 @@ if vim.fn.executable("gh") == 1 then
         },
     })
 
-    local picker = require('octo.picker')
+    local picker = require("octo.picker")
 
-    vim.keymap.set('n', '<leader>oi', picker.issues, { desc = 'Octo list issues' })
-    vim.keymap.set('n', '<leader>op', picker.prs, { desc = 'Octo list PRs' })
-    vim.keymap.set('n', '<leader>oo', '<cmd>Octo pr<cr>', { desc = 'Octo open PR for current branch' })
-    vim.keymap.set('n', '<leader>od', picker.discussions, { desc = 'Octo list discussions' })
-    vim.keymap.set('n', '<leader>on', picker.notifications, { desc = 'Octo list notifications' })
+    vim.keymap.set("n", "<leader>oi", picker.issues, { desc = "Octo list issues" })
+    vim.keymap.set("n", "<leader>op", picker.prs, { desc = "Octo list PRs" })
+    vim.keymap.set("n", "<leader>oo", "<cmd>Octo pr<cr>", { desc = "Octo open PR for current branch" })
+    vim.keymap.set("n", "<leader>od", picker.discussions, { desc = "Octo list discussions" })
+    vim.keymap.set("n", "<leader>on", picker.notifications, { desc = "Octo list notifications" })
 
 else
     vim.notify("`gh` not found", vim.log.levels.WARN)

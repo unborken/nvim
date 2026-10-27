@@ -1,6 +1,6 @@
 vim.pack.add({
-        { src = "https://github.com/nvim-lua/plenary.nvim"  }, -- Dependency
-        { src = "https://github.com/nvim-telescope/telescope.nvim" },
+    { src = "https://github.com/nvim-lua/plenary.nvim"  }, -- Dependency
+    { src = "https://github.com/nvim-telescope/telescope.nvim" },
 })
 
 local hidden_args = function()
@@ -8,24 +8,24 @@ local hidden_args = function()
 end
 
 require("telescope").setup({
-        defaults = {
-                -- custom options go here
-                file_ignore_patterns = {
-                    "^%.git[/\\]",
-                    "[/\\]%.git[/\\]",
-                },
+    defaults = {
+        -- custom options go here
+        file_ignore_patterns = {
+            "^%.git[/\\]",
+            "[/\\]%.git[/\\]",
         },
-        pickers = {
-            find_files = {
-                hidden = true,
-            },
-            live_grep = { additional_args = hidden_args, },
-            grep_string = { additional_args = hidden_args, },
-            colorscheme = {
-                enable_preview = true,
-                ignore_builtins = true,
-            },
+    },
+    pickers = {
+        find_files = {
+            hidden = true,
         },
+        live_grep = { additional_args = hidden_args, },
+        grep_string = { additional_args = hidden_args, },
+        colorscheme = {
+            enable_preview = true,
+            ignore_builtins = true,
+        },
+    },
 })
 
 local builtin = require("telescope.builtin")
