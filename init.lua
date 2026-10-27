@@ -7,6 +7,7 @@ else
         require('plugins.colorscheme')
         require('plugins.telescope')
         require('plugins.treesitter')
+        require('plugins.octo')
 end
 
 require('plugins.fugitive')
