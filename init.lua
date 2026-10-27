@@ -1,15 +1,10 @@
 require('keymaps')
 require('options')
 
-if vim.g.vscode then
-        require('vscode_cfg')
-else
-        require('plugins.colorscheme')
-        require('plugins.telescope')
-        require('plugins.treesitter')
-        require('plugins.octo')
-end
-
+require('plugins.colorscheme')
+require('plugins.telescope')
+require('plugins.treesitter')
+require('plugins.octo')
 require('plugins.fugitive')
 
 if vim.fn.has("win32") == 1 then
