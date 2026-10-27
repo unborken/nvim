@@ -1,13 +1,13 @@
 vim.pack.add{
-      { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://github.com/neovim/nvim-lspconfig" },
 }
 
 vim.lsp.enable({
-    'clangd',
-    'basedpyright'
+    "clangd",
+    "basedpyright"
 })
 
-vim.api.nvim_create_autocmd('LspAttach', {
+vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
         local opts = { buffer = args.buf }
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
