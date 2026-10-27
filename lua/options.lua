@@ -1,3 +1,5 @@
+vim.loader.enable()
+
 vim.g.netrw_banner = 0
 
 vim.o.termguicolors = true
@@ -23,3 +25,6 @@ vim.o.cmdheight = 0
 -- backup
 vim.o.swapfile = false
 vim.o.backup = false
+
+-- filetype
+vim.g.filetype_v = "verilog"
